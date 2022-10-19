@@ -1,0 +1,2 @@
+docker build -t keystone_runner --rm .
+docker run -v /$PWD:/code -it keystone_runner
