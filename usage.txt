@@ -1,2 +1,9 @@
 docker build -t keystone_runner --rm .
 docker run -v /$PWD:/code -it keystone_runner
+
+to get a ropper shell:
+docker run -it crazyhugsy/gef:master
+gef➤  shell
+gef➤  exit
+
+docker run -v /$PWD:/EXE -it crazyhugsy/gef:master
